@@ -1,0 +1,10 @@
+
+hashCode() method has not been overridden in
+Employee Class yet the a HashMap is being used to track duplicates. 
+
+the problem is caused by the hashCode and equals contract in Java.
+The contract is that if two objects are equal(by using equals() method), they must have the same hashCode().
+
+The default implementation of public int hashCode() returns distinct integers for distinct objects.
+In this particular situation, because we haven't defined our own hashCode() method, 
+the default implementation will return two different integers for two compared Employee Objects.

@@ -1,0 +1,7 @@
+The equals method in Employee has NOT
+been correctly overridden. 
+
+Therefore,when the listsAreEqual method checks
+the solution using the .contains method call, it uses the original Object
+implementation of the equals method, which gives incorrect results here since it
+only compares the object references.
